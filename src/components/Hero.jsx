@@ -40,13 +40,13 @@ export const Hero = () => {
           <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
             <div
               className="w-64 sm:w-52 h-12 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customDarkBg3 border-customPrimary transition"
-              onClick={() => setIsModalOpen(true)}
+              onClick={() => window.location.href = 'http://windowsphone.com/s?appid=27fe54a0-c1eb-4759-a93c-109a32d2158e'}
             >
               Windows Phone
             </div>
             <div
               className="w-64 sm:w-52 h-12 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customDarkBg3 border-customPrimary transition"
-              onClick={() => setIsModalOpen(true)}
+              onClick={() => window.location.href = 'https://play.google.com/store/apps/developer?id=Clover+Republic'}
             >
               Android
             </div>
