@@ -6,10 +6,6 @@ import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
   { label: "Home", href: "#home", ariaLabel: "Home" },
-  { label: "Features", href: "#features", ariaLabel: "Features" },
-  { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
-  { label: "Feedback", href: "#feedback", ariaLabel: "Feedback" },
-  { label: "FAQ", href: "#FAQ", ariaLabel: "FAQ" },
 ];
 
 export const Navbar = () => {
@@ -92,7 +88,7 @@ export const Navbar = () => {
             exit={{ opacity: 0 }}
           >
             <div
-              className="flex flex-col mt-16 lg:hidden absolute top-4 left-0  bg-customDarkBg1 z-50 w-full 
+              className="flex flex-col mt-16 lg:hidden absolute top-4 left-0  bg-customDarkBg1 z-50 w-full
         items-center gap-10 pb-10 border-y border-solid border-customDarkBg3 pt-10
         "
             >
