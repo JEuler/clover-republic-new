@@ -1,11 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
-import { GithubIcon } from "../assets/icons/GithubIcon";
-
 const navbarLinks = [
-  { label: "Home", href: "#home", ariaLabel: "Home" },
+  { label: "Home", href: "index.html", ariaLabel: "Home" },
+  { label: "Privacy policy", href: "privacy_policy.html", ariaLabel: "Privacy policy" },
 ];
 
 export const Navbar = () => {
@@ -23,10 +21,10 @@ export const Navbar = () => {
           <a className="navbar-link" href="#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
               <div className="text-white mr-2 text-6xl">
-                <TailcastLogo />
+
               </div>
               <div className="text-white font-['Inter'] font-bold text-xl">
-                Tailcast
+                Clover Republic
               </div>
             </div>
           </a>
@@ -48,25 +46,6 @@ export const Navbar = () => {
                 {label}
               </a>
             ))}
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          exit={{ opacity: 0 }}
-        >
-          <div className="grow basis-0 justify-end hidden lg:flex">
-            <a
-              className="text-white custom-border-gray rounded-xl
-           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-              href="https://github.com/matt765/Tidestream"
-              target="_blank"
-              aria-label="source code"
-            >
-              <GithubIcon />
-              <span className="pt-px">Source code</span>
-            </a>
           </div>
         </motion.div>
         <div
@@ -103,15 +82,6 @@ export const Navbar = () => {
                   {label}
                 </a>
               ))}
-              <a
-                className="text-white custom-border-gray rounded-xl
-           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-                href="https://github.com/matt765/Tidestream"
-                target="_blank"
-              >
-                <GithubIcon />
-                Source code
-              </a>
             </div>
           </motion.div>
         )}

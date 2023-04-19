@@ -1,11 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Hero } from "../components/Hero.jsx";
+import { PrivacyPolicy } from "../components/PrivacyPolicy.jsx";
 import "../styles/Theme.css";
 import "../styles/Diagonals.css";
-
+import { Navbar } from "../components/Navbar";
 ---
 
-<Layout title="Tailcast">
-  <Hero client:load />
+<Layout title='Tailcast'>
+  <Navbar client:load />
+  <PrivacyPolicy client:load />
 </Layout>
