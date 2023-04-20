@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import dashboard from "../assets/images/dashboard.jpg";
+import trollface from "../assets/images/trollface.png";
 
 export const Hero = () => {
   return (
@@ -42,7 +43,7 @@ export const Hero = () => {
                   "http://windowsphone.com/s?appid=27fe54a0-c1eb-4759-a93c-109a32d2158e")
               }
             >
-              Windows Phone
+              Windows Phone <img style={{marginLeft: 6}} width="24" height="24" src={trollface} />
             </div>
             <div
               className='w-64 sm:w-52 h-12 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customDarkBg3 border-customPrimary transition'
